@@ -6,10 +6,11 @@ This project provides REST APIs to manage user notification preferences. Users c
 
 ## Setup Instructions
 
-1. Clone the repository.
+1. Clone the repository https://github.com/anirbanchakraborty123/Notification_Service.git
+
 2. Install the dependencies:
     ```sh
-    pip install django djangorestframework
+    pip install -r requirements.txt
     ```
 3. Run the migrations:
     ```sh
@@ -25,16 +26,16 @@ This project provides REST APIs to manage user notification preferences. Users c
 
 ### Notification Types
 
-- `GET /api/notification-types/`: List all notification types.
-- `POST /api/notification-types/`: Create a new notification type.
+- `GET /api/v1/notification-types/`: List all notification types.
+- `POST /api/v1/notification-types/`: Create a new notification type.
 
 ### Notification Preferences
 
-- `GET /api/notification-preferences/`: List all notification preferences.
-- `POST /api/notification-preferences/`: Create a new notification preference.
-- `GET /api/notification-preferences/<id>/`: Retrieve a notification preference.
-- `PUT /api/notification-preferences/<id>/`: Update a notification preference.
-- `DELETE /api/notification-preferences/<id>/`: Delete a notification preference.
+- `GET /api/v1/notification-preferences/`: List all notification preferences.
+- `POST /api/v1/notification-preferences/`: Create a new notification preference.
+- `GET /api/v1/notification-preferences/<id>/`: Retrieve a notification preference.
+- `PUT /api/v1/notification-preferences/<id>/`: Update a notification preference.
+- `DELETE /api/v1/notification-preferences/<id>/`: Delete a notification preference.
 
 ## Testing the APIs
 
